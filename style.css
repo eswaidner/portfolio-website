@@ -38,6 +38,42 @@ body {
     align-items: center;
 }
 
+h1 {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 600;
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+p {
+    margin: 1rem 0px;
+    line-height: 1.7rem;
+    max-width: 80ch;
+}
+
+.clickable {
+    transition: 150ms opacity;
+}
+
+.clickable:hover {
+    opacity: 0.7;
+}
+
+.clickable:active {
+    opacity: 0.5;
+}
+
 .column {
     flex-grow: 1;
     width: 1000px;
@@ -51,15 +87,41 @@ body {
     border-bottom: 0px;
 }
 
-p {
-    margin: 1rem 0px;
-    line-height: 1.7rem;
-    max-width: 80ch;
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid var(--light);
+}
+
+.breadcrumb {
+    display: flex;
+    column-gap: 10px;
+}
+
+.breadcrumb > div {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 600;
+    font-size: 1.25rem;
+    opacity: 0.4;
+}
+
+.breadcrumb > a {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.socials {
+    display: flex;
+    column-gap: 20px;
 }
 
 .overview {
     display: flex;
-    justify-content: space-between;
+    column-gap: 20px;
     width: 100%;
 }
 
@@ -77,6 +139,10 @@ p {
 
 .business-card {
     font-family: "Source Code Pro", monospace;
+    border: 1px solid var(--light);
+    border-radius: 5px;
+    padding: 25px;
+    flex-grow: 1;
 }
 
 .footer {
