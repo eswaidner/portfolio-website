@@ -2,59 +2,75 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <link rel="icon" type="image/svg+xml" href="assets/cube.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>eswaidner</title>
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
+        <script type="module" src="./components.js"></script>
         <div class="column">
-            <div class="header">
-                <div class="breadcrumb">
-                    <a href="#" class="clickable" style="text-decoration: none">
-                        eswaidner
-                    </a>
-                    <div>/</div>
-                    <div>home</div>
-                </div>
-
-                <div class="socials">
-                    <a
-                        target="_blank"
-                        href="https://github.com/eswaidner"
-                        class="clickable"
-                    >
-                        <img src="./assets/github.svg" />
-                    </a>
-                    <a
-                        target="_blank"
-                        href="https://www.linkedin.com/in/ethanswaidner/"
-                        class="clickable"
-                    >
-                        <img src="./assets/linkedin.svg" />
-                    </a>
-                    <a
-                        target="_blank"
-                        href="https://bsky.app/profile/eswaidner.bsky.social"
-                        class="clickable"
-                    >
-                        <img src="./assets/bluesky.svg" />
-                    </a>
-                </div>
-            </div>
+            <page-header name="home"></page-header>
             <div class="overview">
                 <div class="headshot"><img src="./assets/headshot.jpg" /></div>
                 <div class="business-card">
                     <h3>Ethan Swaidner</h3>
                     <div>
                         <a href="./bi.html" class="clickable">
-                            Bachelor of Innovation</a
+                            Bachelor of Innovation (BI)</a
                         >, Computer Science
                     </div>
+                    <div>
+                        I'm passionate about building software systems that
+                        inspire creativity.
+                    </div>
                     <div>University of Colorado Colorado Springs (UCCS)</div>
+                    <div>Currently building software at SRAM</div>
+                    <a
+                        href="./assets/swaidner_resume.pdf"
+                        download
+                        class="clickable"
+                        ><img
+                            src="./assets/download.svg"
+                            width="20px"
+                        />Resume</a
+                    >
+                    <a
+                        href="./assets/swaidner_cv.pdf"
+                        download
+                        class="clickable"
+                        ><img src="./assets/download.svg" width="20px" />CV</a
+                    >
                 </div>
             </div>
+            <div class="sitemap">
+                <h4>Table of Contents</h4>
+                <ol>
+                    <li>
+                        <a href="./bi.html" class="clickable"
+                            >What is a Bachelor of Innovation?</a
+                        >
+                    </li>
+                    <li>
+                        <a href="./personal.html" class="clickable"
+                            >Personal Statement</a
+                        >
+                    </li>
+                    <li>
+                        <a href="./innovation.html" class="clickable"
+                            >Innovation Statement</a
+                        >
+                    </li>
+                    <li>
+                        <a href="./TODO" class="clickable">Project Showcase</a>
+                    </li>
+                    <li>
+                        <a href="./TODO" class="clickable">Work Experience</a>
+                    </li>
+                    <li><a href="./TODO" class="clickable">Technologies</a></li>
+                </ol>
+            </div>
         </div>
-        <div class="footer">&COPY; 2025 Ethan Swaidner</div>
+        <page-footer></page-footer>
     </body>
 </html>

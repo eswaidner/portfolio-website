@@ -2,13 +2,15 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <link rel="icon" type="image/svg+xml" href="assets/cube.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>eswaidner</title>
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
+        <script type="module" src="./components.js"></script>
         <div class="column">
+            <page-header name="BI"></page-header>
             <h1>Bachelor of Innovation</h1>
             <p>
                 The Bachelor of Innovation (BI) is a unique degree offered by
@@ -46,9 +48,13 @@
                 professional teams after graduation, while simultaneously
                 creating real value for clients.
             </p>
-            <a href="https://innovation.uccs.edu/" class="clickable"
+            <a
+                target="_blank"
+                href="https://innovation.uccs.edu/"
+                class="clickable"
                 >Learn More</a
             >
         </div>
+        <page-footer></page-footer>
     </body>
 </html>
