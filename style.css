@@ -10,14 +10,13 @@
     font-weight: normal;
 
     font-family: "Inter", sans-serif;
-    color: var(--light);
+    color: var(--dark);
 }
 
 :root {
     --primary: #c52530;
-    --light: #fcfcfd;
-    --mid: #252530;
     --dark: #131316;
+    --light: #fcfcfd;
 }
 
 ol,
@@ -31,7 +30,7 @@ img {
 }
 
 body {
-    background-color: var(--dark);
+    background-color: var(--light);
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
@@ -84,7 +83,7 @@ p {
     align-items: center;
     padding: 25px 50px;
     /* min-height: 2000px; */
-    border: 1px solid var(--light);
+    border: 1px solid var(--dark);
     border-top: 0px;
     border-bottom: 0px;
 }
@@ -95,11 +94,18 @@ page-header {
     width: 100%;
     padding-bottom: 15px;
     margin-bottom: 25px;
-    border-bottom: 1px solid var(--light);
+    border-bottom: 1px solid var(--dark);
 }
 
 .sitemap {
-    border: 1px solid var(--light);
+    /* border: 1px solid var(--light); */
+    border-radius: 5px;
+    width: 100%;
+    padding: 25px 50px;
+}
+
+.about-card {
+    /* border: 1px solid var(--light); */
     border-radius: 5px;
     width: 100%;
     padding: 25px 50px;
@@ -135,24 +141,22 @@ page-header {
 }
 
 .headshot {
-    border: 1px solid var(--light);
-    padding: 4px;
+    border: 1px solid var(--dark);
     border-radius: 5px;
     max-width: 250px;
-}
-
-.headshot > img {
-    border-radius: 3px;
     display: block;
-    /* border: 1px solid var(--light); */
 }
 
 .business-card {
     font-family: "Source Code Pro", monospace;
-    border: 1px solid var(--light);
+    border: 1px solid var(--dark);
     border-radius: 5px;
     padding: 25px;
     flex-grow: 1;
+}
+
+.degree {
+    margin: 10px 0px;
 }
 
 page-footer {
@@ -162,5 +166,60 @@ page-footer {
     align-items: center;
     justify-content: center;
     font-family: "Source Code Pro", monospace;
-    border-top: 1px solid var(--light);
+    border-top: 1px solid var(--dark);
+}
+
+.table-of-contents {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.experience-card {
+    width: 100%;
+    border: 1px solid var(--dark);
+    border-radius: 5px;
+    padding: 25px;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.experience-date {
+    font-style: italic;
+}
+
+.experience-highlight {
+    margin: 15px 0px;
+    opacity: 0.75;
+    display: flex;
+}
+
+.experience-highlight:before {
+    content: "▪";
+    margin-right: 10px;
+}
+
+.experience-summary {
+    opacity: 0.75;
+}
+
+.project-card {
+    width: 100%;
+    border: 1px solid var(--dark);
+    border-radius: 5px;
+    padding: 25px;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.project-date {
+    font-style: italic;
 }
