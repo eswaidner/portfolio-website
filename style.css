@@ -59,7 +59,6 @@ h4 {
 p {
     margin: 1rem 0px;
     line-height: 1.75rem;
-    min-width: 80ch;
     max-width: 80ch;
 }
 
@@ -83,7 +82,6 @@ p {
     flex-direction: column;
     align-items: center;
     padding: 25px 50px;
-    /* min-height: 2000px; */
     border: 1px solid var(--dark);
     border-top: 0px;
     border-bottom: 0px;
@@ -99,7 +97,15 @@ page-header {
 }
 
 .sitemap {
-    /* border: 1px solid var(--light); */
+    border: 1px solid var(--dark);
+    border-radius: 5px;
+    padding: 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-card {
     border-radius: 5px;
     width: 100%;
     padding: 25px 50px;
@@ -108,14 +114,26 @@ page-header {
     align-items: center;
 }
 
-.about-card {
-    /* border: 1px solid var(--light); */
-    border-radius: 5px;
+.split-card {
+    display: flex;
     width: 100%;
-    padding: 25px 50px;
+    column-gap: 20px;
+}
+
+.card {
+    flex-basis: 33%;
+    justify-content: space-evenly;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1px solid var(--dark);
+    border-radius: 5px;
+    padding: 20px 25px;
+    row-gap: 15px;
+}
+
+.card > h4 {
+    text-align: center;
 }
 
 .breadcrumb {
@@ -150,7 +168,8 @@ page-header {
 .headshot {
     border: 1px solid var(--dark);
     border-radius: 5px;
-    max-width: 250px;
+    max-width: 200px;
+    max-height: 200px;
     display: block;
 }
 
@@ -158,12 +177,29 @@ page-header {
     font-family: "Source Code Pro", monospace;
     border: 1px solid var(--dark);
     border-radius: 5px;
-    padding: 25px;
+    padding: 20px 25px;
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .degree {
     margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+}
+
+.files {
+    display: flex;
+    column-gap: 20px;
+}
+
+.file {
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
 }
 
 page-footer {
@@ -179,7 +215,13 @@ page-footer {
 .table-of-contents {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     row-gap: 10px;
+    padding: 0px 20px;
+}
+
+.table-of-contents > li {
+    list-style: square;
 }
 
 .experience-card {
@@ -187,22 +229,32 @@ page-footer {
     border: 1px solid var(--dark);
     border-radius: 5px;
     padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .experience-header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+    width: 100%;
 }
 
 .experience-date {
     font-style: italic;
 }
 
+.experience-title {
+    font-weight: 700;
+    width: 100%;
+}
+
 .experience-highlight {
     margin: 15px 0px;
-    opacity: 0.75;
     display: flex;
+    padding-bottom: 35px;
+    border-bottom: 1px solid var(--dark);
 }
 
 .experience-highlight:before {
@@ -211,7 +263,6 @@ page-footer {
 }
 
 .experience-summary {
-    opacity: 0.75;
 }
 
 .project-card {
