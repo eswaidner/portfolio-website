@@ -59,6 +59,7 @@ h4 {
 p {
     margin: 1rem 0px;
     line-height: 1.75rem;
+    min-width: 80ch;
     max-width: 80ch;
 }
 
@@ -67,11 +68,11 @@ p {
 }
 
 .clickable:hover {
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 .clickable:active {
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 .column {
@@ -102,6 +103,9 @@ page-header {
     border-radius: 5px;
     width: 100%;
     padding: 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about-card {
@@ -109,6 +113,9 @@ page-header {
     border-radius: 5px;
     width: 100%;
     padding: 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .breadcrumb {
@@ -212,14 +219,30 @@ page-footer {
     border: 1px solid var(--dark);
     border-radius: 5px;
     padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .project-header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+    width: 100%;
 }
 
 .project-date {
     font-style: italic;
+}
+
+.img-list {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.img-list > img {
+    display: block;
+    max-width: 50%;
+    border-radius: 5px;
 }
