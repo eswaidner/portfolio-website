@@ -11,49 +11,29 @@
         <script type="module" src="./components.js"></script>
         <div class="column">
             <page-header name="home"></page-header>
-            <div class="overview">
-                <img class="headshot" src="./assets/headshot.jpg" />
-                <div class="business-card">
-                    <h3>Ethan Swaidner</h3>
-                    <div class="degree">
-                        <div style="font-weight: 700">
-                            <a
-                                style="font-weight: 700"
-                                href="./bi.html"
-                                class="clickable"
-                            >
-                                BI</a
-                            >, Computer Science (UCCS)
-                        </div>
-                        <div style="font-style: italic">
-                            Graduating December 2025
-                        </div>
-                    </div>
+            <div id="content">
+                <div id="intro">
+                    <h1>Ethan Swaidner</h1>
+                    <h2>Software Engineer</h2>
+                    <p>
+                        I'm passionate about building products
+                        that empower people to express themselves. Currently, I'm developing internal tools at
+                        <a class="clickable highlight" target="_blank" href="https://sram.com">SRAM</a> and finishing up my
+                        <a class="clickable highlight" target="_blank" href="https://innovation.uccs.edu/">BI</a> in Computer Science.
+                    </p>
+                </div>
+                <div id="projects">
+                    <h2><span class="fragment">#</span>Projects</h2>
+                    <project-card name="Drone Fleet" desc="Build a fleet of autonomous drones using a set of physical parts" tags="Unity C#"></project-card>
+                    <project-card name="Aquitech" desc="Lorem ipsum dolor sit amet" tags="Unity, C#, AWS"></project-card>
+                    <project-card name="Zen" desc="2D web game engine" tags="TypeScript, WebGL2"></project-card>
+                    <project-card name="Track Cycling" desc="Competed at a world-class level" tags="Bikes"></project-card>
+                    <project-card name="Innoavation Projects" desc="..." tags="Graphic Design, Leadership"></project-card>
+                </div>
+                <div id="contact">
+                    <button></button>
                 </div>
             </div>
-            <div class="about-card">
-                <h3>About Me</h3>
-                <p>
-                    I'm a software engineer passionate about building systems
-                    that empower people to express themselves. I have a
-                    background in game development and enjoy using lessons I
-                    learned from game design to enhance the user experience of
-                    my software. I'm currently developing internal tools at
-                    <a class="clickable" target="_blank" href="https://sram.com"
-                        >SRAM</a
-                    >.
-                </p>
-                <p>
-                    In my free time, I work on game development passion
-                    projects, create music, and read. I'm at my happiest when
-                    I'm using my imagination to solve practical problems.
-                    Software development is more than a job to me. It is my
-                    primary medium for creative expression and an infinite
-                    canvas with unlimited potential that I wake up every day
-                    excited to explore.
-                </p>
-            </div>
-        </div>
         <page-footer></page-footer>
     </body>
 </html>
