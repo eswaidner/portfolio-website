@@ -14,7 +14,7 @@ export class PageHeader extends HTMLElement {
     this.innerHTML = `
         <div class="breadcrumb">
             <a href="./index.html#" class="clickable" style="text-decoration: none">
-                ${name !== "home" ? "<< " : ""}eswaidner
+                eswaidner
             </a>
             <div>/</div>
             <div>${name}</div>

@@ -11,29 +11,75 @@
         <script type="module" src="./components.js"></script>
         <div class="column">
             <page-header name="home"></page-header>
-            <div id="content">
-                <div id="intro">
-                    <h1>Ethan Swaidner</h1>
-                    <h2>Software Engineer</h2>
-                    <p>
-                        I'm passionate about building products
-                        that empower people to express themselves. Currently, I'm developing internal tools at
-                        <a class="clickable highlight" target="_blank" href="https://sram.com">SRAM</a> and finishing up my
-                        <a class="clickable highlight" target="_blank" href="https://innovation.uccs.edu/">BI</a> in Computer Science.
-                    </p>
+            <div id="content-holder">
+                <div id="content">
+                    <div id="intro">
+                        <h1>Ethan Swaidner</h1>
+                        <h2>Software Engineer</h2>
+                        <p>
+                            I'm passionate about building products that empower
+                            people to express themselves. Currently, I'm
+                            developing web-based internal tools at
+                            <a
+                                class="clickable highlight"
+                                target="_blank"
+                                href="https://sram.com"
+                                >SRAM</a
+                            >
+                            and finishing up my
+                            <a
+                                class="clickable highlight"
+                                target="_blank"
+                                href="https://innovation.uccs.edu/"
+                                >BI</a
+                            >
+                            in Computer Science.
+                        </p>
+                    </div>
+                    <div id="projects">
+                        <h2><span class="fragment">#</span>Projects</h2>
+                        <project-card
+                            name="Drone Fleet"
+                            desc="Build fleets of autonomous battle drones using simulated parts"
+                            tags="Unity, C#"
+                        ></project-card>
+                        <project-card
+                            name="Aquitech"
+                            desc="Build a submarine and battle other players in online matches"
+                            tags="Unity, C#, AWS"
+                        ></project-card>
+                        <project-card
+                            name="Zen"
+                            desc="2D web game engine built from scratch"
+                            tags="TypeScript, WebGL2"
+                        ></project-card>
+                        <project-card
+                            name="Innovation Teams"
+                            desc="Innovation consulting for real-world clients"
+                            tags="Leadership, Collaboration"
+                        ></project-card>
+                        <project-card
+                            name="ndcc"
+                            desc="Custom programming language compiler"
+                            tags="Rust"
+                        ></project-card>
+                        <project-card
+                            name="Track Cycling"
+                            desc="Competed at a world-class level"
+                            tags="Bikes"
+                        ></project-card>
+                    </div>
+                    <div id="contact">
+                        <a
+                            class="contact-btn clickable"
+                            href="mailto:eswaidner2@gmail.com"
+                            target="_blank"
+                            >Contact Me</a
+                        >
+                    </div>
                 </div>
-                <div id="projects">
-                    <h2><span class="fragment">#</span>Projects</h2>
-                    <project-card name="Drone Fleet" desc="Build a fleet of autonomous drones using a set of physical parts" tags="Unity, C#"></project-card>
-                    <project-card name="Aquitech" desc="Lorem ipsum dolor sit amet" tags="Unity, C#, AWS"></project-card>
-                    <project-card name="Zen" desc="2D web game engine" tags="TypeScript, WebGL2"></project-card>
-                    <project-card name="Innovation Team Projects" desc="..." tags="Leadership, Graphic Design"></project-card>
-                    <project-card name="Track Cycling" desc="Competed at a world-class level" tags="Bikes"></project-card>
-                </div>
-                <div id="contact">
-                    <a class="contact-btn clickable" href="mailto:eswaidner2@gmail.com" target="_blank">Contact Me</a>
-                </div>
+            </div>
+            <page-footer></page-footer>
         </div>
-        <page-footer></page-footer>
     </body>
 </html>
