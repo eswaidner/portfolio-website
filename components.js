@@ -63,17 +63,25 @@ export class ProjectCard extends HTMLElement {
     const desc = this.attributes["desc"].nodeValue;
     const tags = this.attributes["tags"].nodeValue;
 
-    const tagsHtml = tags.split(", ").map(t => {
-      if (!t) return;
-      return `<div class="project-tag">${t}</div>`;
-    }).join("\n");
+    const tagsHtml = tags
+      .split(", ")
+      .map((t) => {
+        if (!t) return;
+        return `<div class="project-tag">${t}</div>`;
+      })
+      .join("\n");
+
+    const id = name.toLowerCase().replace(" ", "-");
 
     this.innerHTML = `
-      <h3 class="project-name">${name}</h3>
-      <p class="project-desc">${desc}</p>
-      <div class="project-tags">
-        ${tagsHtml}
-      </div>
+      <div class="project-bg" style="background-image: url(./assets/${id}-thumb.png);"></div>
+      <a class="project-link" href="./${id}.html">
+        <h3 class="project-name">${name}</h3>
+        <p class="project-desc">${desc}</p>
+        <div class="project-tags">
+          ${tagsHtml}
+        </div>
+      </a>
     `;
   }
 }

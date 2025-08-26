@@ -24,7 +24,7 @@
 
 ol,
 ul {
-    list-style: none;
+    list-style:;
 }
 
 img {
@@ -129,13 +129,30 @@ page-header {
     row-gap: 20px;
 }
 
+#contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.contact-btn {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    border: 1px solid var(--primary);
+    padding: 10px 15px;
+    color: var(--primary);
+    border-radius: 5px;
+}
+
 project-card {
+    position: relative;
     color: var(--primary);
     background-color: var(--mid-dark);
     border-radius: 5px;
-    padding: 20px;
     transition: all 100ms;
     border: 1px solid var(--mid-dark);
+    overflow: hidden;
 }
 
 project-card:hover {
@@ -146,6 +163,25 @@ project-card:hover {
 project-card:active {
     opacity: 0.7;
     cursor: pointer;
+}
+
+.project-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.1;
+    background-position: center;
+    background-size: cover;
+}
+
+.project-link {
+    position: relative;
+    z-index: 1;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
 }
 
 .project-name {
@@ -165,7 +201,7 @@ project-card:active {
 .project-tag {
     background-color: var(--mid-primary);
     color: var(--primary);
-    padding: 5px 15px;    
+    padding: 5px 15px;
     border-radius: 999px;
 }
 
