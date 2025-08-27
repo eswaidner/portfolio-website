@@ -176,7 +176,6 @@ page-header {
 
 project-card {
     position: relative;
-    color: var(--primary);
     background-color: var(--mid-dark);
     border-radius: 5px;
     transition: all 100ms;
@@ -194,13 +193,17 @@ project-card:active {
     cursor: pointer;
 }
 
+.vmargin {
+    margin-top: 30px;
+}
+
 .project-bg {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    opacity: 0.15;
+    opacity: 0.1;
     background-position: center;
     background-size: cover;
 }
@@ -218,6 +221,7 @@ project-card:active {
 }
 
 .project-desc {
+    
 }
 
 .project-tags {
@@ -424,7 +428,6 @@ page-footer > div {
 
 .img-list {
     position: relative;
-    flex-shrink: 1;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -432,6 +435,6 @@ page-footer > div {
 
 .img-list > img {
     display: block;
-    max-width: 50%;
     border-radius: 5px;
+    flex-shrink: 1;
 }

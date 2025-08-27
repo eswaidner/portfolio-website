@@ -50,6 +50,7 @@ export class PageFooter extends HTMLElement {
           <img src="./assets/bluesky.svg" />
       </a>
     </div>
+    <div>Built with HTML, CSS, and JS</div>
     <div>/* &COPY; 2025 Ethan Swaidner */</div>
     `;
   }
@@ -74,7 +75,7 @@ export class ProjectCard extends HTMLElement {
     const id = name.toLowerCase().replace(" ", "-");
 
     this.innerHTML = `
-      <div class="project-bg" style="background-image: url(./assets/${id}-thumb.png);"></div>
+      <div class="project-bg" style="background-image: url(./assets/${id}-thumb.webp);"></div>
       <a class="project-link" href="./${id}.html">
         <h3 class="project-name">${name}</h3>
         <p class="project-desc">${desc}</p>
