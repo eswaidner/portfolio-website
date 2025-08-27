@@ -11,117 +11,76 @@
         <script type="module" src="./components.js"></script>
         <div class="column">
             <page-header name="home"></page-header>
-            <div class="overview">
-                <img class="headshot" src="./assets/headshot.jpg" />
-                <div class="business-card">
-                    <h3>Ethan Swaidner</h3>
-                    <div class="degree">
-                        <div style="font-weight: 700">
+            <div id="content-holder">
+                <div id="content">
+                    <div id="intro">
+                        <h1>Ethan Swaidner</h1>
+                        <h2>Software Engineer</h2>
+                        <p>
+                            I'm passionate about building products that empower
+                            people to express themselves. Currently, I'm
+                            developing web-based internal tools at
                             <a
-                                style="font-weight: 700"
-                                href="./bi.html"
-                                class="clickable"
+                                class="clickable highlight"
+                                target="_blank"
+                                href="https://sram.com"
+                                >SRAM</a
                             >
-                                Bachelor of Innovation (BI)</a
-                            >, Computer Science
-                        </div>
-                        <div>
-                            University of Colorado Colorado Springs (UCCS)
-                        </div>
-                        <div style="font-style: italic">
-                            Graduating December 2025
-                        </div>
+                            and finishing up my
+                            <a
+                                class="clickable highlight"
+                                target="_blank"
+                                href="https://innovation.uccs.edu/"
+                                >BI</a
+                            >
+                            in Computer Science.
+                        </p>
                     </div>
-                    <div class="files">
+                    <div id="projects">
+                        <h2><span class="fragment">#</span>Projects</h2>
+                        <project-card
+                            name="Drone Fleet"
+                            desc="Build fleets of autonomous battle drones using simulated parts"
+                            tags="Unity, C#"
+                        ></project-card>
+                        <project-card
+                            name="Aquitech"
+                            desc="Build a submarine and battle other players in online matches"
+                            tags="Unity, C#, AWS"
+                        ></project-card>
+                        <!-- <project-card
+                            name="Zen"
+                            desc="2D web game engine built from scratch"
+                            tags="TypeScript, WebGL2"
+                        ></project-card> -->
+                        <project-card
+                            name="Innovation Teams"
+                            desc="Innovation consulting for real-world clients"
+                            tags="Leadership, Collaboration"
+                        ></project-card>
+                        <!-- <project-card
+                            name="ndcc"
+                            desc="Custom programming language compiler"
+                            tags="Rust"
+                        ></project-card> -->
+                        <project-card
+                            name="Track Cycling"
+                            desc="Competed at a world-class level"
+                            tags="Bikes"
+                        ></project-card>
+                        <div style="text-align: center;">More to come! I'm still working on cataloging my projects.</div>
+                    </div>
+                    <div id="contact">
                         <a
+                            class="contact-btn clickable"
+                            href="mailto:eswaidner2@gmail.com"
                             target="_blank"
-                            href="./assets/swaidner_resume.pdf"
-                            class="file clickable"
-                            ><img src="assets/file.svg" />Resume</a
-                        >
-                        <a
-                            target="_blank"
-                            href="./assets/swaidner_cv.pdf"
-                            class="file clickable"
-                            ><img src="assets/file.svg" />CV</a
+                            >Contact Me</a
                         >
                     </div>
                 </div>
-                <div class="sitemap">
-                    <nav>
-                        <ol class="table-of-contents">
-                            <li>
-                                <a href="./bi.html" class="clickable"
-                                    >Bachelor of Innovation</a
-                                >
-                            </li>
-                            <li>
-                                <a href="./personal.html" class="clickable"
-                                    >Personal Statement</a
-                                >
-                            </li>
-                            <li>
-                                <a href="./innovation.html" class="clickable"
-                                    >Innovation Statement</a
-                                >
-                            </li>
-                            <li>
-                                <a href="./projects.html" class="clickable"
-                                    >Project Showcase</a
-                                >
-                            </li>
-                            <li>
-                                <a href="./experience.html" class="clickable"
-                                    >Work Experience</a
-                                >
-                            </li>
-                        </ol>
-                    </nav>
-                </div>
             </div>
-            <div class="about-card">
-                <h3>About Me</h3>
-                <p>
-                    I'm a software engineer passionate about building systems
-                    that inspire creativity. I have a background in game
-                    development and enjoy using lessons I learned from game
-                    design to enhance the user experience of my software. I'm
-                    currently developing internal tools at
-                    <a class="clickable" target="_blank" href="https://sram.com"
-                        >SRAM</a
-                    >.
-                </p>
-                <p>
-                    In my free time, I work on game development passion
-                    projects, create music, and read. I'm at my happiest when
-                    I'm using my imagination to solve practical problems.
-                    Software development is more than a job to me. It is my
-                    primary medium for creative expression and an infinite
-                    canvas with unlimited potential that I wake up every day
-                    excited to explore.
-                </p>
-            </div>
-            <div class="split-card">
-                <div class="card">
-                    <h4>Who I Am</h4>
-                    <a class="clickable" href="./personal.html"
-                        >Personal Statement</a
-                    >
-                </div>
-                <div class="card">
-                    <h4>My Mission</h4>
-                    <a class="clickable" href="./innovation.html"
-                        >Innovation Statement</a
-                    >
-                </div>
-                <div class="card">
-                    <h4>My Impact</h4>
-                    <a class="clickable" href="./projects.html"
-                        >Project Showcase</a
-                    >
-                </div>
-            </div>
+            <page-footer></page-footer>
         </div>
-        <page-footer></page-footer>
     </body>
 </html>
